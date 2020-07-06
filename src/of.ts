@@ -11,3 +11,10 @@ of(10, 20, 30).subscribe(
   (err) => console.log('error:', err),
   () => console.log('the end')
 )
+
+// 행렬도 하나로 취급한다.
+of([1, 2, 3]).subscribe(
+  (next) => console.log('next:', next),
+  (err) => console.log('error:', err),
+  () => console.log('the end')
+)
